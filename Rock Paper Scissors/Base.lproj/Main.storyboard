@@ -73,6 +73,74 @@ rock, paper or scissors</string>
             </objects>
             <point key="canvasLocation" x="642" y="659"/>
         </scene>
+        <!--Result View Controller-->
+        <scene sceneID="xwk-GE-umf">
+            <objects>
+                <viewController id="ynZ-ds-sE1" customClass="ResultViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ieQ-Cq-KQl"/>
+                        <viewControllerLayoutGuide type="bottom" id="8RZ-uX-JEw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="APX-jt-E1A">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tie" translatesAutoresizingMaskIntoConstraints="NO" id="Lmc-MA-zoK">
+                                <rect key="frame" x="251" y="28" width="98" height="98"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tie" translatesAutoresizingMaskIntoConstraints="NO" id="jqs-qp-vUO">
+                                <rect key="frame" x="251" y="234" width="98" height="98"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tie" translatesAutoresizingMaskIntoConstraints="NO" id="y06-6f-ofe">
+                                <rect key="frame" x="251" y="410" width="98" height="98"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="It's a tie!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G5j-2X-zu5">
+                                <rect key="frame" x="262" y="134" width="77" height="23"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You chose:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6nu-Gc-n1D">
+                                <rect key="frame" x="258" y="205" width="84" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Opponent chose:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPd-n5-QIU">
+                                <rect key="frame" x="234" y="381" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jBi-IL-dtS">
+                                <rect key="frame" x="249" y="544" width="102" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Play Again"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6nu-Gc-n1D" firstAttribute="centerX" secondItem="APX-jt-E1A" secondAttribute="centerX" id="7eS-Bi-el8"/>
+                            <constraint firstItem="G5j-2X-zu5" firstAttribute="top" secondItem="Lmc-MA-zoK" secondAttribute="bottom" constant="8" id="CGW-ke-RFn"/>
+                            <constraint firstItem="MPd-n5-QIU" firstAttribute="top" secondItem="jqs-qp-vUO" secondAttribute="bottom" constant="49" id="DxU-A8-q6t"/>
+                            <constraint firstItem="8RZ-uX-JEw" firstAttribute="top" secondItem="jBi-IL-dtS" secondAttribute="bottom" constant="20" id="ERa-cS-Fy2"/>
+                            <constraint firstItem="Lmc-MA-zoK" firstAttribute="top" secondItem="ieQ-Cq-KQl" secondAttribute="bottom" constant="8" id="FlB-CS-VvB"/>
+                            <constraint firstItem="G5j-2X-zu5" firstAttribute="centerX" secondItem="APX-jt-E1A" secondAttribute="centerX" id="HjB-wG-vC2"/>
+                            <constraint firstItem="jqs-qp-vUO" firstAttribute="centerX" secondItem="APX-jt-E1A" secondAttribute="centerX" id="I4T-bI-V68"/>
+                            <constraint firstItem="MPd-n5-QIU" firstAttribute="centerX" secondItem="APX-jt-E1A" secondAttribute="centerX" id="IPH-WY-V36"/>
+                            <constraint firstItem="6nu-Gc-n1D" firstAttribute="top" secondItem="G5j-2X-zu5" secondAttribute="bottom" constant="48" id="JnD-Nf-3vk"/>
+                            <constraint firstItem="jqs-qp-vUO" firstAttribute="top" secondItem="6nu-Gc-n1D" secondAttribute="bottom" constant="8" id="UW9-bf-roh"/>
+                            <constraint firstItem="jBi-IL-dtS" firstAttribute="centerX" secondItem="APX-jt-E1A" secondAttribute="centerX" id="WqX-q3-yec"/>
+                            <constraint firstItem="y06-6f-ofe" firstAttribute="centerX" secondItem="APX-jt-E1A" secondAttribute="centerX" id="iMN-jG-SvO"/>
+                            <constraint firstItem="Lmc-MA-zoK" firstAttribute="centerX" secondItem="APX-jt-E1A" secondAttribute="centerX" id="j3f-kD-Dgd"/>
+                            <constraint firstItem="y06-6f-ofe" firstAttribute="top" secondItem="MPd-n5-QIU" secondAttribute="bottom" constant="8" id="lB3-IJ-net"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xns-Hp-6Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1372" y="659"/>
+        </scene>
         <!--About View Controller-->
         <scene sceneID="6a2-PF-vEh">
             <objects>
@@ -132,5 +200,6 @@ rock, paper or scissors</string>
         <image name="paper" width="98" height="98"/>
         <image name="rock" width="98" height="98"/>
         <image name="scissors" width="98" height="98"/>
+        <image name="tie" width="98" height="98"/>
     </resources>
 </document>

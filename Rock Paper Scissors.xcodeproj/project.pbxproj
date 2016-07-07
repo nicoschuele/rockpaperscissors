@@ -14,6 +14,7 @@
 		037E9EBD1D2F09F1004DBEC4 /* Rock_Paper_ScissorsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9EBC1D2F09F1004DBEC4 /* Rock_Paper_ScissorsTests.swift */; };
 		037E9EC81D2F0E71004DBEC4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9EC71D2F0E71004DBEC4 /* MainViewController.swift */; };
 		037E9ECA1D2F15BD004DBEC4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9EC91D2F15BD004DBEC4 /* AboutViewController.swift */; };
+		037E9ECC1D2F1B7D004DBEC4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ECB1D2F1B7D004DBEC4 /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		037E9EBE1D2F09F1004DBEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		037E9EC71D2F0E71004DBEC4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		037E9EC91D2F15BD004DBEC4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		037E9ECB1D2F1B7D004DBEC4 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 			children = (
 				037E9EC71D2F0E71004DBEC4 /* MainViewController.swift */,
 				037E9EC91D2F15BD004DBEC4 /* AboutViewController.swift */,
+				037E9ECB1D2F1B7D004DBEC4 /* ResultViewController.swift */,
 				037E9EA71D2F09F1004DBEC4 /* AppDelegate.swift */,
 				037E9EAB1D2F09F1004DBEC4 /* Main.storyboard */,
 				037E9EAE1D2F09F1004DBEC4 /* Assets.xcassets */,
@@ -204,6 +207,7 @@
 				037E9ECA1D2F15BD004DBEC4 /* AboutViewController.swift in Sources */,
 				037E9EA81D2F09F1004DBEC4 /* AppDelegate.swift in Sources */,
 				037E9EC81D2F0E71004DBEC4 /* MainViewController.swift in Sources */,
+				037E9ECC1D2F1B7D004DBEC4 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
