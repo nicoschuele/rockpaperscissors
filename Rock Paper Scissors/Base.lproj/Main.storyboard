@@ -84,7 +84,39 @@ rock, paper or scissors</string>
                     <view key="view" contentMode="scaleToFill" id="qlt-VG-I9D">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gameIcons" translatesAutoresizingMaskIntoConstraints="NO" id="VKo-Av-BWn">
+                                <rect key="frame" x="20" y="20" width="98" height="98"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rock Paper Scissors" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EE4-4z-O7n">
+                                <rect key="frame" x="215" y="174" width="170" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKj-sb-mSI">
+                                <rect key="frame" x="234" y="544" width="133" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="Back to Game"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by @NicoSchuele  Icons by game-icons.net  Code available at: https://github.com/nicoschuele/rockpaperscissors " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMB-rT-uPK">
+                                <rect key="frame" x="158" y="249" width="285" height="101"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KMB-rT-uPK" firstAttribute="centerY" secondItem="qlt-VG-I9D" secondAttribute="centerY" id="3Gc-bt-9rd"/>
+                            <constraint firstItem="VKo-Av-BWn" firstAttribute="top" secondItem="4dm-fJ-WHq" secondAttribute="bottom" id="Bc1-gX-Btd"/>
+                            <constraint firstItem="EE4-4z-O7n" firstAttribute="top" secondItem="4dm-fJ-WHq" secondAttribute="bottom" constant="154" id="Csg-Jb-TyN"/>
+                            <constraint firstItem="KMB-rT-uPK" firstAttribute="centerX" secondItem="qlt-VG-I9D" secondAttribute="centerX" id="LVe-jL-0mb"/>
+                            <constraint firstItem="sKj-sb-mSI" firstAttribute="centerX" secondItem="qlt-VG-I9D" secondAttribute="centerX" id="bQe-WP-yyM"/>
+                            <constraint firstItem="Yrq-yK-Ymy" firstAttribute="top" secondItem="sKj-sb-mSI" secondAttribute="bottom" constant="20" id="fW7-cc-49X"/>
+                            <constraint firstItem="VKo-Av-BWn" firstAttribute="leading" secondItem="qlt-VG-I9D" secondAttribute="leadingMargin" id="snu-Il-NcX"/>
+                            <constraint firstItem="EE4-4z-O7n" firstAttribute="centerX" secondItem="qlt-VG-I9D" secondAttribute="centerX" id="vHH-R8-XzH"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GeT-wB-XvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -93,6 +125,7 @@ rock, paper or scissors</string>
         </scene>
     </scenes>
     <resources>
+        <image name="gameIcons" width="98" height="98"/>
         <image name="paper" width="98" height="98"/>
         <image name="rock" width="98" height="98"/>
         <image name="scissors" width="98" height="98"/>
