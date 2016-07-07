@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-Pz-jFf">
                                 <rect key="frame" x="558" y="558" width="22" height="22"/>
                                 <connections>
-                                    <segue destination="oje-a2-xq6" kind="presentation" id="S68-DI-xqB"/>
+                                    <segue destination="oje-a2-xq6" kind="presentation" modalTransitionStyle="flipHorizontal" id="S68-DI-xqB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-p6-qVG">
@@ -98,6 +98,9 @@ rock, paper or scissors</string>
                                 <rect key="frame" x="234" y="544" width="133" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Back to Game"/>
+                                <connections>
+                                    <action selector="close:" destination="oje-a2-xq6" eventType="touchUpInside" id="JJP-ky-3sM"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Made by @NicoSchuele  Icons by game-icons.net  Code available at: https://github.com/nicoschuele/rockpaperscissors " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KMB-rT-uPK">
                                 <rect key="frame" x="158" y="249" width="285" height="101"/>
