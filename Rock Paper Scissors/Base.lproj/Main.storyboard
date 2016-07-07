@@ -18,13 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWl-1R-1EK">
-                                <rect key="frame" x="482" y="251" width="98" height="98"/>
-                                <state key="normal" image="scissors"/>
-                                <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctY-IP-3kj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-Pz-jFf">
                                 <rect key="frame" x="558" y="558" width="22" height="22"/>
                                 <connections>
@@ -53,6 +46,14 @@ rock, paper or scissors</string>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Jx-s9-wEy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWl-1R-1EK">
+                                <rect key="frame" x="482" y="251" width="98" height="98"/>
+                                <state key="normal" image="scissors"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctY-IP-3kj"/>
+                                    <segue destination="ynZ-ds-sE1" kind="presentation" identifier="showResultAutomatic" id="tji-x7-qbR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -68,6 +69,9 @@ rock, paper or scissors</string>
                             <constraint firstItem="dFc-lZ-0sw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ocJ-wF-iRH"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <segue destination="ynZ-ds-sE1" kind="presentation" identifier="showResult" id="GbP-zu-Sgz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -76,7 +80,7 @@ rock, paper or scissors</string>
         <!--Result View Controller-->
         <scene sceneID="xwk-GE-umf">
             <objects>
-                <viewController id="ynZ-ds-sE1" customClass="ResultViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultViewController" id="ynZ-ds-sE1" customClass="ResultViewController" customModule="RPS" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ieQ-Cq-KQl"/>
                         <viewControllerLayoutGuide type="bottom" id="8RZ-uX-JEw"/>
@@ -202,4 +206,7 @@ rock, paper or scissors</string>
         <image name="scissors" width="98" height="98"/>
         <image name="tie" width="98" height="98"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="tji-x7-qbR"/>
+    </inferredMetricsTieBreakers>
 </document>

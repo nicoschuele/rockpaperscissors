@@ -17,13 +17,23 @@ class MainViewController: UIViewController {
     @IBAction func play(sender: UIButton) {
         switch sender.tag {
         case 0:
-            print("rock")
+            rockPressed()
         case 1:
-            print("paper")
+            paperPressed()
         case 2:
             print("scissors")
         default:
             print("wtf?")
         }
     }
+    
+    func rockPressed() {
+        let targetVC = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+        presentViewController(targetVC, animated: true, completion: nil)
+    }
+    
+    func paperPressed() {
+        performSegueWithIdentifier("showResult", sender: self)
+    }    
+    
 }
