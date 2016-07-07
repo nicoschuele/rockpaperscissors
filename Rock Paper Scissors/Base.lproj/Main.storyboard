@@ -44,12 +44,12 @@ rock, paper or scissors</string>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="q0m-Ue-bg0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="4Xw-J3-yXu"/>
                             <constraint firstItem="lWl-1R-1EK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8hz-0g-VBW"/>
-                            <constraint firstItem="q0m-Ue-bg0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="D75-N1-L3c"/>
                             <constraint firstItem="GTd-Pz-jFf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DQs-OB-mzz"/>
-                            <constraint firstItem="q0m-Ue-bg0" firstAttribute="centerX" secondItem="3cN-p6-qVG" secondAttribute="centerX" id="LMd-Lp-5cf"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3cN-p6-qVG" secondAttribute="bottom" constant="118" id="P6u-W1-j5K"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GTd-Pz-jFf" secondAttribute="bottom" constant="20" id="SQc-HT-oZ6"/>
+                            <constraint firstItem="q0m-Ue-bg0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TDM-II-s76"/>
                             <constraint firstItem="3cN-p6-qVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bRQ-5U-hi2"/>
                             <constraint firstItem="dFc-lZ-0sw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ev3-d1-L8m"/>
                             <constraint firstItem="lWl-1R-1EK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jt2-XE-fzp"/>
