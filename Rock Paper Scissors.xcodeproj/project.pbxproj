@@ -146,6 +146,7 @@
 				TargetAttributes = {
 					037E9EA31D2F09F1004DBEC4 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 89K854R6UT;
 					};
 					037E9EB71D2F09F1004DBEC4 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -327,6 +328,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Rock Paper Scissors/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicoschuele.Rock-Paper-Scissors";
@@ -338,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = "Rock Paper Scissors/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nicoschuele.Rock-Paper-Scissors";
