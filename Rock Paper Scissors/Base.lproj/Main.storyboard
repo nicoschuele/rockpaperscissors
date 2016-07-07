@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main View Controller-->
@@ -16,11 +17,54 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-Ue-bg0">
+                                <rect key="frame" x="251" y="59" width="98" height="98"/>
+                                <state key="normal" image="rock"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFc-lZ-0sw">
+                                <rect key="frame" x="20" y="251" width="98" height="98"/>
+                                <state key="normal" image="paper"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWl-1R-1EK">
+                                <rect key="frame" x="482" y="251" width="98" height="98"/>
+                                <state key="normal" image="scissors"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="detailDisclosure" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GTd-Pz-jFf">
+                                <rect key="frame" x="558" y="558" width="22" height="22"/>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3cN-p6-qVG">
+                                <rect key="frame" x="207" y="441" width="187" height="41"/>
+                                <string key="text">Choose from
+rock, paper or scissors</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lWl-1R-1EK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8hz-0g-VBW"/>
+                            <constraint firstItem="GTd-Pz-jFf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DQs-OB-mzz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3cN-p6-qVG" secondAttribute="bottom" constant="118" id="P6u-W1-j5K"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GTd-Pz-jFf" secondAttribute="bottom" constant="20" id="SQc-HT-oZ6"/>
+                            <constraint firstItem="3cN-p6-qVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bRQ-5U-hi2"/>
+                            <constraint firstItem="q0m-Ue-bg0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="cgc-IQ-upw"/>
+                            <constraint firstItem="dFc-lZ-0sw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ev3-d1-L8m"/>
+                            <constraint firstItem="lWl-1R-1EK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jt2-XE-fzp"/>
+                            <constraint firstItem="dFc-lZ-0sw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ocJ-wF-iRH"/>
+                            <constraint firstItem="q0m-Ue-bg0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rVV-6B-057"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="642" y="659"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="paper" width="98" height="98"/>
+        <image name="rock" width="98" height="98"/>
+        <image name="scissors" width="98" height="98"/>
+    </resources>
 </document>
