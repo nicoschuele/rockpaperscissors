@@ -20,10 +20,8 @@ class MainViewController: UIViewController {
             rockPressed()
         case 1:
             paperPressed()
-        case 2:
-            print("scissors")
         default:
-            print("wtf?")
+            rockPressed()
         }
     }
     

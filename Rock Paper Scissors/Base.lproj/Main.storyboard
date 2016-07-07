@@ -32,7 +32,7 @@ rock, paper or scissors</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-Ue-bg0">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-Ue-bg0">
                                 <rect key="frame" x="251" y="59" width="98" height="98"/>
                                 <state key="normal" image="rock"/>
                                 <connections>
@@ -120,6 +120,9 @@ rock, paper or scissors</string>
                                 <rect key="frame" x="249" y="544" width="102" height="36"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <state key="normal" title="Play Again"/>
+                                <connections>
+                                    <action selector="playAgain:" destination="ynZ-ds-sE1" eventType="touchUpInside" id="xFU-d2-x6c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -140,6 +143,12 @@ rock, paper or scissors</string>
                             <constraint firstItem="y06-6f-ofe" firstAttribute="top" secondItem="MPd-n5-QIU" secondAttribute="bottom" constant="8" id="lB3-IJ-net"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="opponentChoice" destination="y06-6f-ofe" id="mvH-br-MAx"/>
+                        <outlet property="playerChoice" destination="jqs-qp-vUO" id="dDd-OF-7Tx"/>
+                        <outlet property="resultIcon" destination="Lmc-MA-zoK" id="sCC-2x-36e"/>
+                        <outlet property="resultMessage" destination="G5j-2X-zu5" id="abs-rq-ZdH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xns-Hp-6Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
