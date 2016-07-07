@@ -26,7 +26,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		037E9EA41D2F09F1004DBEC4 /* Rock Paper Scissors.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rock Paper Scissors.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		037E9EA41D2F09F1004DBEC4 /* RPS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RPS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		037E9EA71D2F09F1004DBEC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		037E9EA91D2F09F1004DBEC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		037E9EAC1D2F09F1004DBEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -68,7 +68,7 @@
 		037E9EA51D2F09F1004DBEC4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				037E9EA41D2F09F1004DBEC4 /* Rock Paper Scissors.app */,
+				037E9EA41D2F09F1004DBEC4 /* RPS.app */,
 				037E9EB81D2F09F1004DBEC4 /* Rock Paper ScissorsTests.xctest */,
 			);
 			name = Products;
@@ -99,9 +99,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		037E9EA31D2F09F1004DBEC4 /* Rock Paper Scissors */ = {
+		037E9EA31D2F09F1004DBEC4 /* RPS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 037E9EC11D2F09F1004DBEC4 /* Build configuration list for PBXNativeTarget "Rock Paper Scissors" */;
+			buildConfigurationList = 037E9EC11D2F09F1004DBEC4 /* Build configuration list for PBXNativeTarget "RPS" */;
 			buildPhases = (
 				037E9EA01D2F09F1004DBEC4 /* Sources */,
 				037E9EA11D2F09F1004DBEC4 /* Frameworks */,
@@ -111,9 +111,9 @@
 			);
 			dependencies = (
 			);
-			name = "Rock Paper Scissors";
+			name = RPS;
 			productName = "Rock Paper Scissors";
-			productReference = 037E9EA41D2F09F1004DBEC4 /* Rock Paper Scissors.app */;
+			productReference = 037E9EA41D2F09F1004DBEC4 /* RPS.app */;
 			productType = "com.apple.product-type.application";
 		};
 		037E9EB71D2F09F1004DBEC4 /* Rock Paper ScissorsTests */ = {
@@ -167,7 +167,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				037E9EA31D2F09F1004DBEC4 /* Rock Paper Scissors */,
+				037E9EA31D2F09F1004DBEC4 /* RPS */,
 				037E9EB71D2F09F1004DBEC4 /* Rock Paper ScissorsTests */,
 			);
 		};
@@ -216,7 +216,7 @@
 /* Begin PBXTargetDependency section */
 		037E9EBA1D2F09F1004DBEC4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 037E9EA31D2F09F1004DBEC4 /* Rock Paper Scissors */;
+			target = 037E9EA31D2F09F1004DBEC4 /* RPS */;
 			targetProxy = 037E9EB91D2F09F1004DBEC4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -384,7 +384,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		037E9EC11D2F09F1004DBEC4 /* Build configuration list for PBXNativeTarget "Rock Paper Scissors" */ = {
+		037E9EC11D2F09F1004DBEC4 /* Build configuration list for PBXNativeTarget "RPS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				037E9EC21D2F09F1004DBEC4 /* Debug */,

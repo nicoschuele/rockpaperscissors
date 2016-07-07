@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "037E9EA31D2F09F1004DBEC4"
-               BuildableName = "Rock Paper Scissors.app"
-               BlueprintName = "Rock Paper Scissors"
+               BuildableName = "RPS.app"
+               BlueprintName = "RPS"
                ReferencedContainer = "container:Rock Paper Scissors.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -43,8 +43,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "037E9EA31D2F09F1004DBEC4"
-            BuildableName = "Rock Paper Scissors.app"
-            BlueprintName = "Rock Paper Scissors"
+            BuildableName = "RPS.app"
+            BlueprintName = "RPS"
             ReferencedContainer = "container:Rock Paper Scissors.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
@@ -66,8 +66,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "037E9EA31D2F09F1004DBEC4"
-            BuildableName = "Rock Paper Scissors.app"
-            BlueprintName = "Rock Paper Scissors"
+            BuildableName = "RPS.app"
+            BlueprintName = "RPS"
             ReferencedContainer = "container:Rock Paper Scissors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -85,8 +85,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "037E9EA31D2F09F1004DBEC4"
-            BuildableName = "Rock Paper Scissors.app"
-            BlueprintName = "Rock Paper Scissors"
+            BuildableName = "RPS.app"
+            BlueprintName = "RPS"
             ReferencedContainer = "container:Rock Paper Scissors.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
