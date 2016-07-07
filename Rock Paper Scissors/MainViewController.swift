@@ -14,5 +14,16 @@ class MainViewController: UIViewController {
         super.viewDidLoad()     
     }
 
-    
+    @IBAction func play(sender: UIButton) {
+        switch sender.tag {
+        case 0:
+            print("rock")
+        case 1:
+            print("paper")
+        case 2:
+            print("scissors")
+        default:
+            print("wtf?")
+        }
+    }
 }
