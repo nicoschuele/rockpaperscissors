@@ -27,11 +27,26 @@ class MainViewController: UIViewController {
     
     func rockPressed() {
         let targetVC = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
+        targetVC.playerHand = Hands.rock
+        targetVC.opponentHand = Game.randomDraw()
         presentViewController(targetVC, animated: true, completion: nil)
     }
     
     func paperPressed() {
         performSegueWithIdentifier("showResult", sender: self)
-    }    
+    }
     
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        if segue.identifier ==  "showResult" || segue.identifier == "showResultAutomatic" {
+            let targetVC = segue.destinationViewController as! ResultViewController
+            targetVC.opponentHand = Game.randomDraw()
+            
+            if segue.identifier == "showResult" {
+                targetVC.playerHand = Hands.paper
+            } else {
+                targetVC.playerHand = Hands.scissors
+            }
+        }
+    }
 }
