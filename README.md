@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple app that demonstrates 3 different ways to perform segue transitions.
+This is a simple app that demonstrates 3 different ways to perform segue transitions. You can [get the app on the App Store](https://itunes.apple.com/us/app/ro-pa-sci/id1132586450?ls=1&mt=8) too.
 
 1. **Rock:** From code, without using Storyboard
 2. **Paper:** Mixed-mode between a manual Storyboard segue called from code
