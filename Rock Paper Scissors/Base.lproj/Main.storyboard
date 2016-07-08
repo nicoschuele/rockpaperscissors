@@ -32,13 +32,6 @@ rock, paper or scissors</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFc-lZ-0sw">
-                                <rect key="frame" x="20" y="251" width="98" height="98"/>
-                                <state key="normal" image="paper"/>
-                                <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Jx-s9-wEy"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWl-1R-1EK">
                                 <rect key="frame" x="482" y="251" width="98" height="98"/>
                                 <state key="normal" image="scissors"/>
@@ -52,6 +45,13 @@ rock, paper or scissors</string>
                                 <state key="normal" image="rock"/>
                                 <connections>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="knL-Ft-Wl5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dFc-lZ-0sw">
+                                <rect key="frame" x="20" y="251" width="98" height="98"/>
+                                <state key="normal" image="paper"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Jx-s9-wEy"/>
                                 </connections>
                             </button>
                         </subviews>
