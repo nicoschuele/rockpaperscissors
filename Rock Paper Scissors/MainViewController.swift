@@ -15,38 +15,32 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    var selectedHand: Hand?
+    
     @IBAction func play(sender: UIButton) {
         switch sender.tag {
         case 0:
-            rockPressed()
+            playHand(Hands.rock)
         case 1:
-            paperPressed()
+            playHand(Hands.paper)
         default:
-            rockPressed()
+            playHand(Hands.scissors)
         }
     }
     
-    func rockPressed() {
-        let targetVC = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
-        targetVC.playerHand = Hands.rock
-        targetVC.opponentHand = Game.randomDraw()
-        self.presentViewController(targetVC, animated: true, completion: nil)
-    }
-    
-    func paperPressed() {
+    func playHand(hand: Hand) {
+        selectedHand = hand
         performSegueWithIdentifier("showResult", sender: self)
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
-        if segue.identifier ==  "showResult" || segue.identifier == "showResultAutomatic" {
+        if segue.identifier ==  "showResult" {
             let targetVC = segue.destinationViewController as! ResultViewController
             targetVC.opponentHand = Game.randomDraw()
             
-            if segue.identifier == "showResult" {
-                targetVC.playerHand = Hands.paper
-            } else {
-                targetVC.playerHand = Hands.scissors
+            if let value = selectedHand {
+                targetVC.playerHand = value
             }
         }
     }

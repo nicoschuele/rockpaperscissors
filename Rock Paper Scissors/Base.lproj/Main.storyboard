@@ -37,7 +37,6 @@ rock, paper or scissors</string>
                                 <state key="normal" image="scissors"/>
                                 <connections>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctY-IP-3kj"/>
-                                    <segue destination="ynZ-ds-sE1" kind="presentation" identifier="showResultAutomatic" id="tji-x7-qbR"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-Ue-bg0">
@@ -215,7 +214,4 @@ rock, paper or scissors</string>
         <image name="scissors" width="98" height="98"/>
         <image name="tie" width="98" height="98"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="GbP-zu-Sgz"/>
-    </inferredMetricsTieBreakers>
 </document>
