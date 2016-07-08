@@ -6,6 +6,11 @@
 //  Copyright © 2016 Nico Schuele. All rights reserved.
 //
 
+// This class demonstrates how to perform segues in 3 different ways:
+// - rock: completely from code, without using a Storyboard segue
+// - paper: mixed-mode between a manual Storyboard segue and code to trigger it
+// - scissors: fully automatic from Storyboard
+
 import UIKit
 
 class MainViewController: UIViewController {
