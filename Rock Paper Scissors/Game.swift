@@ -28,7 +28,7 @@ struct Game {
     
     // Returns a random hand
     static func randomDraw() -> Hand {
-        let random = arc4random_uniform(2)
+        let random = arc4random_uniform(3)
         switch random {
         case 0:
             return Hands.rock
