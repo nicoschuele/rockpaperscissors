@@ -15,6 +15,9 @@
 		037E9EC81D2F0E71004DBEC4 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9EC71D2F0E71004DBEC4 /* MainViewController.swift */; };
 		037E9ECA1D2F15BD004DBEC4 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9EC91D2F15BD004DBEC4 /* AboutViewController.swift */; };
 		037E9ECC1D2F1B7D004DBEC4 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ECB1D2F1B7D004DBEC4 /* ResultViewController.swift */; };
+		037E9ECE1D2F2230004DBEC4 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ECD1D2F2230004DBEC4 /* Hand.swift */; };
+		037E9ED01D2F2291004DBEC4 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ECF1D2F2291004DBEC4 /* Hands.swift */; };
+		037E9ED21D2F240D004DBEC4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ED11D2F240D004DBEC4 /* Game.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,9 @@
 		037E9EC71D2F0E71004DBEC4 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		037E9EC91D2F15BD004DBEC4 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		037E9ECB1D2F1B7D004DBEC4 /* ResultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		037E9ECD1D2F2230004DBEC4 /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
+		037E9ECF1D2F2291004DBEC4 /* Hands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hands.swift; sourceTree = "<group>"; };
+		037E9ED11D2F240D004DBEC4 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,9 @@
 				037E9EAE1D2F09F1004DBEC4 /* Assets.xcassets */,
 				037E9EB01D2F09F1004DBEC4 /* LaunchScreen.storyboard */,
 				037E9EB31D2F09F1004DBEC4 /* Info.plist */,
+				037E9ECD1D2F2230004DBEC4 /* Hand.swift */,
+				037E9ECF1D2F2291004DBEC4 /* Hands.swift */,
+				037E9ED11D2F240D004DBEC4 /* Game.swift */,
 			);
 			path = "Rock Paper Scissors";
 			sourceTree = "<group>";
@@ -205,8 +214,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				037E9ECA1D2F15BD004DBEC4 /* AboutViewController.swift in Sources */,
+				037E9ECE1D2F2230004DBEC4 /* Hand.swift in Sources */,
+				037E9ED21D2F240D004DBEC4 /* Game.swift in Sources */,
 				037E9EA81D2F09F1004DBEC4 /* AppDelegate.swift in Sources */,
 				037E9EC81D2F0E71004DBEC4 /* MainViewController.swift in Sources */,
+				037E9ED01D2F2291004DBEC4 /* Hands.swift in Sources */,
 				037E9ECC1D2F1B7D004DBEC4 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
