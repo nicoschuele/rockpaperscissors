@@ -14,11 +14,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()     
-    }
-
+    
     @IBAction func play(sender: UIButton) {
         switch sender.tag {
         case 0:
@@ -34,7 +30,7 @@ class MainViewController: UIViewController {
         let targetVC = self.storyboard?.instantiateViewControllerWithIdentifier("ResultViewController") as! ResultViewController
         targetVC.playerHand = Hands.rock
         targetVC.opponentHand = Game.randomDraw()
-        presentViewController(targetVC, animated: true, completion: nil)
+        self.presentViewController(targetVC, animated: true, completion: nil)
     }
     
     func paperPressed() {

@@ -18,10 +18,6 @@ class ResultViewController: UIViewController {
     var playerHand: Hand?
     var opponentHand: Hand?
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
