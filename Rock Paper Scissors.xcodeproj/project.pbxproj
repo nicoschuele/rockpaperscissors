@@ -18,6 +18,7 @@
 		037E9ECE1D2F2230004DBEC4 /* Hand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ECD1D2F2230004DBEC4 /* Hand.swift */; };
 		037E9ED01D2F2291004DBEC4 /* Hands.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ECF1D2F2291004DBEC4 /* Hands.swift */; };
 		037E9ED21D2F240D004DBEC4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ED11D2F240D004DBEC4 /* Game.swift */; };
+		037E9ED41D2F2F24004DBEC4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ED31D2F2F24004DBEC4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		037E9ECD1D2F2230004DBEC4 /* Hand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hand.swift; sourceTree = "<group>"; };
 		037E9ECF1D2F2291004DBEC4 /* Hands.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hands.swift; sourceTree = "<group>"; };
 		037E9ED11D2F240D004DBEC4 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		037E9ED31D2F2F24004DBEC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 		037E9E9B1D2F09F1004DBEC4 = {
 			isa = PBXGroup;
 			children = (
+				037E9ED31D2F2F24004DBEC4 /* README.md */,
 				037E9EA61D2F09F1004DBEC4 /* Rock Paper Scissors */,
 				037E9EBB1D2F09F1004DBEC4 /* Rock Paper ScissorsTests */,
 				037E9EA51D2F09F1004DBEC4 /* Products */,
@@ -219,6 +222,7 @@
 				037E9EA81D2F09F1004DBEC4 /* AppDelegate.swift in Sources */,
 				037E9EC81D2F0E71004DBEC4 /* MainViewController.swift in Sources */,
 				037E9ED01D2F2291004DBEC4 /* Hands.swift in Sources */,
+				037E9ED41D2F2F24004DBEC4 /* README.md in Sources */,
 				037E9ECC1D2F1B7D004DBEC4 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
