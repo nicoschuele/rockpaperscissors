@@ -11,6 +11,7 @@ This is a simple app that demonstrates 3 different ways to perform segue transit
 ## Author
 
 Nico Schuele - [@Nicoschuele](https://twitter.com/nicoschuele)
+
 Images courtesy of [Game-icons.net](http://game-icons.net)
 
 ## License
