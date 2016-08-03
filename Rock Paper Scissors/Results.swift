@@ -8,6 +8,6 @@
 
 import Foundation
 
-struct Result {
+struct Results {
     static var playCount = 0
 }

@@ -45,7 +45,7 @@ class ResultViewController: UIViewController {
         }
         
         // Increase play count
-        Result.playCount += 1
+        Results.playCount += 1
         
         
     }

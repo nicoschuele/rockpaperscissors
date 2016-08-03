@@ -36,8 +36,8 @@ class MainViewController: UIViewController {
     }
     
     func displayPlayCount() {
-        let gameWord = Result.playCount == 1 ? "game" : "games"
-        let message = "\(Result.playCount) \(gameWord) played"
+        let gameWord = Results.playCount == 1 ? "game" : "games"
+        let message = "\(Results.playCount) \(gameWord) played"
         playCountLabel.text = message
     }
     
