@@ -15,10 +15,13 @@ class HistoryViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        let cell = tableView.dequeueReusableCellWithIdentifier("ResultCell")!
+        let result = Results.results[indexPath.row]
+        cell.textLabel?.text = result.result
+        cell.detailTextLabel?.text = "\(result.playerHand) vs \(result.aiHand)"
+        return cell
     }
 
-    
     @IBAction func closeHistory(sender: AnyObject) {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
