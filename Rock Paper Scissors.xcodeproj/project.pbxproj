@@ -20,6 +20,7 @@
 		037E9ED21D2F240D004DBEC4 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E9ED11D2F240D004DBEC4 /* Game.swift */; };
 		03BED9C41D52401300D06C86 /* Results.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BED9C31D52401300D06C86 /* Results.swift */; };
 		03BED9C61D5241BF00D06C86 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BED9C51D5241BF00D06C86 /* Result.swift */; };
+		03BED9C81D5243EF00D06C86 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BED9C71D5243EF00D06C86 /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		037E9ED31D2F2F24004DBEC4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		03BED9C31D52401300D06C86 /* Results.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Results.swift; sourceTree = "<group>"; };
 		03BED9C51D5241BF00D06C86 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		03BED9C71D5243EF00D06C86 /* HistoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 				037E9EC71D2F0E71004DBEC4 /* MainViewController.swift */,
 				037E9ECB1D2F1B7D004DBEC4 /* ResultViewController.swift */,
 				037E9EC91D2F15BD004DBEC4 /* AboutViewController.swift */,
+				03BED9C71D5243EF00D06C86 /* HistoryViewController.swift */,
 				037E9EA71D2F09F1004DBEC4 /* AppDelegate.swift */,
 				037E9EAB1D2F09F1004DBEC4 /* Main.storyboard */,
 				037E9EAE1D2F09F1004DBEC4 /* Assets.xcassets */,
@@ -224,6 +227,7 @@
 				03BED9C61D5241BF00D06C86 /* Result.swift in Sources */,
 				037E9ECA1D2F15BD004DBEC4 /* AboutViewController.swift in Sources */,
 				037E9ECE1D2F2230004DBEC4 /* Hand.swift in Sources */,
+				03BED9C81D5243EF00D06C86 /* HistoryViewController.swift in Sources */,
 				03BED9C41D52401300D06C86 /* Results.swift in Sources */,
 				037E9ED21D2F240D004DBEC4 /* Game.swift in Sources */,
 				037E9EA81D2F09F1004DBEC4 /* AppDelegate.swift in Sources */,
