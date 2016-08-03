@@ -16,6 +16,7 @@ import UIKit
 class MainViewController: UIViewController {
     
     @IBOutlet weak var playCountLabel: UILabel!
+    @IBOutlet weak var historyButton: UIButton!
     
     var selectedHand: Hand?
     
@@ -43,10 +44,9 @@ class MainViewController: UIViewController {
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
+        historyButton.hidden = Results.playCount < 1
+        
         displayPlayCount()
-        
-        print(Results.results)
-        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
