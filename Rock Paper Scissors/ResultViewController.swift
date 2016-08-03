@@ -44,6 +44,9 @@ class ResultViewController: UIViewController {
             resultMessage.text = "It's a tie!"
         }
         
+        // Increase play count
+        Result.playCount += 1
+        
         
     }
     

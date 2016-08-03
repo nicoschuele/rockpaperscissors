@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -32,13 +31,6 @@ rock, paper or scissors</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWl-1R-1EK">
-                                <rect key="frame" x="482" y="251" width="98" height="98"/>
-                                <state key="normal" image="scissors"/>
-                                <connections>
-                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctY-IP-3kj"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-Ue-bg0">
                                 <rect key="frame" x="251" y="59" width="98" height="98"/>
                                 <state key="normal" image="rock"/>
@@ -53,22 +45,38 @@ rock, paper or scissors</string>
                                     <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1Jx-s9-wEy"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTA-TK-tQN">
+                                <rect key="frame" x="20" y="559" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWl-1R-1EK">
+                                <rect key="frame" x="482" y="251" width="98" height="98"/>
+                                <state key="normal" image="scissors"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ctY-IP-3kj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="q0m-Ue-bg0" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="39" id="4Xw-J3-yXu"/>
                             <constraint firstItem="lWl-1R-1EK" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="8hz-0g-VBW"/>
                             <constraint firstItem="GTd-Pz-jFf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="DQs-OB-mzz"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dTA-TK-tQN" secondAttribute="bottom" constant="20" id="H9I-sI-4yn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3cN-p6-qVG" secondAttribute="bottom" constant="118" id="P6u-W1-j5K"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GTd-Pz-jFf" secondAttribute="bottom" constant="20" id="SQc-HT-oZ6"/>
                             <constraint firstItem="q0m-Ue-bg0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TDM-II-s76"/>
                             <constraint firstItem="3cN-p6-qVG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bRQ-5U-hi2"/>
                             <constraint firstItem="dFc-lZ-0sw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ev3-d1-L8m"/>
+                            <constraint firstItem="dTA-TK-tQN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ilI-Ns-qBU"/>
                             <constraint firstItem="lWl-1R-1EK" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="jt2-XE-fzp"/>
                             <constraint firstItem="dFc-lZ-0sw" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="ocJ-wF-iRH"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="playCountLabel" destination="dTA-TK-tQN" id="jHu-Y8-4ad"/>
                         <segue destination="ynZ-ds-sE1" kind="presentation" identifier="showResult" id="GbP-zu-Sgz"/>
                     </connections>
                 </viewController>

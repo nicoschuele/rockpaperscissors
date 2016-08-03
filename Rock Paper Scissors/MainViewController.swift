@@ -15,6 +15,8 @@ import UIKit
 
 class MainViewController: UIViewController {
     
+    @IBOutlet weak var playCountLabel: UILabel!
+    
     var selectedHand: Hand?
     
     @IBAction func play(sender: UIButton) {
@@ -31,6 +33,18 @@ class MainViewController: UIViewController {
     func playHand(hand: Hand) {
         selectedHand = hand
         performSegueWithIdentifier("showResult", sender: self)
+    }
+    
+    func displayPlayCount() {
+        let gameWord = Result.playCount == 1 ? "game" : "games"
+        let message = "\(Result.playCount) \(gameWord) played"
+        playCountLabel.text = message
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        displayPlayCount()
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
