@@ -35,7 +35,7 @@ class ResultViewController: UIViewController {
         switch Game.comparePlayerHand(playerHand!, withOpponent: opponentHand!) {
         case .Win:
             resultIcon.image = UIImage(named: "win")
-            resultMessage.text = "You win!"
+            resultMessage.text = "You win!"            
         case .Lose:
             resultIcon.image = UIImage(named: "lose")
             resultMessage.text = "You lose..."

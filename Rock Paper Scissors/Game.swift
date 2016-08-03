@@ -18,10 +18,13 @@ struct Game {
     static func comparePlayerHand(hand: Hand, withOpponent versus: Hand) -> GameResult {
         switch (hand.name, versus.name) {
         case ("rock", "paper"), ("paper", "scissors"), ("scissors", "rock"):
+            Results.results.append(Result(playerHand: hand.name, aiHand: versus.name, result: "Lost"))
             return .Lose
         case ("rock", "scissors"), ("paper", "rock"), ("scissors", "paper"):
+            Results.results.append(Result(playerHand: hand.name, aiHand: versus.name, result: "Won"))
             return .Win
         default:
+            Results.results.append(Result(playerHand: hand.name, aiHand: versus.name, result: "Tie"))
             return .Tie
         }
     }

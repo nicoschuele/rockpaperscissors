@@ -45,6 +45,8 @@ class MainViewController: UIViewController {
         super.viewWillAppear(animated)
         displayPlayCount()
         
+        print(Results.results)
+        
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {

@@ -1,5 +1,5 @@
 //
-//  Results.swift
+//  Result.swift
 //  Rock Paper Scissors
 //
 //  Created by Nico Schuele on 03/08/16.
@@ -8,7 +8,8 @@
 
 import Foundation
 
-struct Results {
-    static var playCount = 0
-    static var results = [Result]()
+struct Result {
+    let playerHand: String
+    let aiHand: String
+    let result: String
 }
