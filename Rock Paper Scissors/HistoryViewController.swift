@@ -32,4 +32,7 @@ class HistoryViewController: UIViewController {
     }
     */
 
+    @IBAction func closeHistory(sender: AnyObject) {
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
 }

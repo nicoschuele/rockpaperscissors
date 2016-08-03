@@ -31,7 +31,7 @@ rock, paper or scissors</string>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-Ue-bg0">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q0m-Ue-bg0">
                                 <rect key="frame" x="251" y="59" width="98" height="98"/>
                                 <state key="normal" image="rock"/>
                                 <connections>
@@ -55,7 +55,7 @@ rock, paper or scissors</string>
                                 <rect key="frame" x="39" y="554" width="50" height="30"/>
                                 <state key="normal" title="History"/>
                                 <connections>
-                                    <segue destination="yef-YO-L8X" kind="presentation" id="9ae-k9-7nE"/>
+                                    <segue destination="gv2-da-LlJ" kind="presentation" id="9ae-k9-7nE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lWl-1R-1EK">
@@ -84,6 +84,7 @@ rock, paper or scissors</string>
                             <constraint firstItem="0BE-4s-vBH" firstAttribute="leading" secondItem="dTA-TK-tQN" secondAttribute="trailing" constant="8" id="vED-v9-ehB"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="kNm-6D-j4h"/>
                     <connections>
                         <outlet property="playCountLabel" destination="dTA-TK-tQN" id="jHu-Y8-4ad"/>
                         <segue destination="ynZ-ds-sE1" kind="presentation" identifier="showResult" id="GbP-zu-Sgz"/>
@@ -91,7 +92,7 @@ rock, paper or scissors</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="659"/>
+            <point key="canvasLocation" x="1454" y="659"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="xwk-GE-umf">
@@ -168,7 +169,7 @@ rock, paper or scissors</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xns-Hp-6Kh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="659"/>
+            <point key="canvasLocation" x="2184" y="659"/>
         </scene>
         <!--About View Controller-->
         <scene sceneID="6a2-PF-vEh">
@@ -221,7 +222,7 @@ rock, paper or scissors</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GeT-wB-XvZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="642" y="1414"/>
+            <point key="canvasLocation" x="755" y="1414"/>
         </scene>
         <!--History View Controller-->
         <scene sceneID="Yo5-Me-TzO">
@@ -237,12 +238,34 @@ rock, paper or scissors</string>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="DCM-fD-FAc">
-                        <barButtonItem key="leftBarButtonItem" title="Back" id="BcR-aB-Nej"/>
+                        <barButtonItem key="leftBarButtonItem" title="Back" id="BcR-aB-Nej">
+                            <connections>
+                                <action selector="closeHistory:" destination="yef-YO-L8X" id="4HO-Rz-6SD"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJQ-oh-bFc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1372" y="1414"/>
+            <point key="canvasLocation" x="2184" y="1414"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="niu-FH-Edv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gv2-da-LlJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="PJ5-nm-PRT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="yef-YO-L8X" kind="relationship" relationship="rootViewController" id="vLS-At-bfh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iHY-bP-qWr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1454" y="1414"/>
         </scene>
     </scenes>
     <resources>
